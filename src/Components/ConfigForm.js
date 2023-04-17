@@ -101,8 +101,8 @@ export default function ConfigForm() {
           <input
             type="text"
             id="EncType"
-            name="EncType"
-            value={formInputs.EncType}
+            name="CEncType"
+            value={formInputs.CEncType}
             onChange={handleInputChange}
           ></input>
         </div>
@@ -141,8 +141,8 @@ export default function ConfigForm() {
           <input
             type="text"
             id="EncType"
-            name="EncType"
-            value={formInputs.EncType}
+            name="AEncType"
+            value={formInputs.AEncType}
             onChange={handleInputChange}
           ></input>
         </div>
