@@ -27,7 +27,10 @@ export default function Form() {
     e.preventDefault();
     setIsSpin(true);
     try {
-      const res = await axios.post("http://localhost:8080/hello", formInputs);
+      const res = await axios.post(
+        `${process.env.REACT_APP_SERVER_URL}/hello`,
+        formInputs
+      );
       console.log("res:", res.data);
     } catch (err) {
       console.log(err);
